@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+    <title>スズフェス2026 | あそぼう。わらおう。みんなで、いっしょに。</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        suzu: {
+                            orange: '#f97316',
+                            red: '#ef4444',
+                            blue: '#0ea5e9',
+                            dark: '#1f2937',
+                            light: '#fff7ed'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* カスタムパターンやアニメーション */
+        .dot-pattern {
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 24px 24px;
+        }
+        .text-shadow-strong {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .polaroid-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- ナビゲーションバー -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-black text-suzu-orange tracking-tighter">
+                        SUZU<span class="text-suzu-blue">FES</span> 2026
+                    </a>
+                </div>
+                <!-- デスクトップメニュー -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#recap" class="text-gray-600 hover:text-suzu-orange font-bold transition">昨年のハイライト</a>
+                    <a href="#highlights" class="text-gray-600 hover:text-suzu-orange font-bold transition">今年の見どころ</a>
+                    <a href="#access" class="text-gray-600 hover:text-suzu-orange font-bold transition">アクセス</a>
+                    <a href="#volunteer" class="bg-suzu-orange text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-md">ボランティア募集</a>
+                </div>
+                <!-- モバイルメニューボタン -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-suzu-orange focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#recap" class="block px-3 py-3 text-center text-gray-800 font-bold hover:bg-orange-50">昨年のハイライト</a>
+                <a href="#highlights" class="block px-3 py-3 text-center text-gray-800 font-bold hover:bg-orange-50">今年の見どころ</a>
+                <a href="#access" class="block px-3 py-3 text-center text-gray-800 font-bold hover:bg-orange-50">アクセス</a>
+                <a href="#volunteer" class="block px-3 py-3 text-center text-suzu-orange font-bold hover:bg-orange-50">ボランティア募集</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- ヒーロー背景 (画像プレースホルダー) -->
+        <div class="absolute inset-0 z-0 bg-suzu-dark">
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 bg-gray-900">
+                <i class="fas fa-camera-retro text-6xl mb-6 text-gray-700"></i>
+                <div class="border-4 border-dashed border-gray-700 p-8 md:p-12 rounded-xl text-center max-w-4xl">
+                    <span class="text-xl md:text-3xl text-gray-500 font-bold leading-relaxed">
+                        
+                    </span>
+                </div>
+            </div>
+            <!-- テキストを読みやすくするためのグラデーションオーバーレイ -->
+            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/50 to-suzu-orange/40"></div>
+        </div>
+
+        <!-- ヒーローコンテンツ -->
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <p class="text-white text-shadow-strong font-bold text-lg md:text-2xl mb-4 tracking-wide animate-fade-in-up">
+                昨年、１年越しの想いが実り、みんなが笑顔になったあの熱狂が帰ってくる。
+            </p>
+            <h1 class="text-5xl md:text-7xl lg:text-7xl font-black text-white text-shadow-strong mb-6 tracking-tight">
+                あそぼう。わらおう。<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-suzu-orange drop-shadow-md">みんなで、いっしょに。</span>
+            </h1>
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 inline-block mb-10 shadow-2xl">
+                <p class="text-suzu-yellow font-black text-3xl md:text-5xl tracking-widest mb-2 text-shadow-strong">SUZUFES 2026</p>
+                <p class="text-white font-bold text-xl md:text-2xl mb-1">2026.09.20 <span class="text-suzu-orange">SUN</span> 10:00 - 18:00</p>
+                <p class="text-white font-medium text-lg">会場：珠洲市営野球場 ／ <span class="bg-suzu-red text-white px-3 py-1 rounded-md font-bold text-sm ml-2">入場無料</span></p>
+            </div>
+            
+            <div>
+                <a href="#highlights" class="inline-block bg-suzu-orange hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition duration-300 text-lg">
+                    今年の見どころをチェック <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2025年振り返りセクション（フック） -->
+    <section id="recap" class="py-24 relative bg-suzu-light overflow-hidden">
+        <div class="absolute inset-0 dot-pattern opacity-50 z-0"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-suzu-blue font-bold tracking-widest text-sm mb-2 block">2025 RECAP</span>
+                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6">
+                    困難を乗り越えた<span class="text-suzu-orange">大熱狂</span>と<span class="text-suzu-orange">感動</span>を、もう一度。
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+                    能登半島地震から立ち上がろうと準備を進めた2024年。しかし前日の歴史的豪雨により無念の中止を余儀なくされました。<br class="hidden md:block">
+                    それでも決して諦めず、地元の方々の強い想いと全国からの支援により、1年越しで悲願の初開催を果たした昨年の「スズフェス」。<br class="hidden md:block">
+                    子どもたちが思いきり走り回り、誰もが最高の笑顔を見せたあの日の感動を写真で振り返ります。
+                </p>
+            </div>
+
+            <!-- スクラップブック風 写真グリッド -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 lg:gap-8 px-4">
+                
+                <!-- 写真1 -->
+                <div class="bg-white p-3 polaroid-shadow rounded-sm transform -rotate-2 hover:rotate-0 hover:scale-105 transition duration-300 z-10 mx-auto w-full max-w-sm border border-gray-200">
+                    <div class="aspect-square bg-gray-100 flex flex-col items-center justify-center p-4 text-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                        <i class="fas fa-music text-4xl mb-3 text-gray-400 group-hover:text-suzu-orange transition"></i>
+                        <span class="text-sm font-bold text-gray-500 break-words w-full">
+                            
+                        </span>
+                    </div>
+                    <div class="pt-4 pb-2 text-center">
+                        <h3 class="font-black text-gray-800 text-lg mb-1">熱狂のLIVEステージ</h3>
+                        <p class="text-xs text-gray-500 font-medium">地元・飯田高校の演奏から始まり、豪華アーティストの熱唱が珠洲に響き渡りました。</p>
+                    </div>
+                </div>
+
+                <!-- 写真2 -->
+                <div class="bg-white p-3 polaroid-shadow rounded-sm transform rotate-3 hover:rotate-0 hover:scale-105 transition duration-300 z-20 mx-auto w-full max-w-sm border border-gray-200 mt-0 md:mt-8">
+                    <div class="aspect-square bg-gray-100 flex flex-col items-center justify-center p-4 text-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                        <i class="fas fa-running text-4xl mb-3 text-gray-400 group-hover:text-suzu-blue transition"></i>
+                        <span class="text-sm font-bold text-gray-500 break-words w-full">
+                            
+                        </span>
+                    </div>
+                    <div class="pt-4 pb-2 text-center">
+                        <h3 class="font-black text-gray-800 text-lg mb-1">HEROsとスポーツ</h3>
+                        <p class="text-xs text-gray-500 font-medium">各分野の元日本代表アスリートが集結！子どもたちの元気な笑い声が響き渡りました。</p>
+                    </div>
+                </div>
+
+                <!-- 写真3 -->
+                <div class="bg-white p-3 polaroid-shadow rounded-sm transform -rotate-1 hover:rotate-0 hover:scale-105 transition duration-300 z-10 mx-auto w-full max-w-sm border border-gray-200">
+                    <div class="aspect-square bg-gray-100 flex flex-col items-center justify-center p-4 text-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                        <i class="fas fa-gift text-4xl mb-3 text-gray-400 group-hover:text-red-400 transition"></i>
+                        <span class="text-sm font-bold text-gray-500 break-words w-full">
+                            
+                        </span>
+                    </div>
+                    <div class="pt-4 pb-2 text-center">
+                        <h3 class="font-black text-gray-800 text-lg mb-1">大熱狂の大抽選会</h3>
+                        <p class="text-xs text-gray-500 font-medium">YEGメンバーが進行役として大活躍！会場の盛り上がりは最高潮に達しました。</p>
+                    </div>
+                </div>
+
+                <!-- 写真4 -->
+                <div class="bg-white p-3 polaroid-shadow rounded-sm transform rotate-2 hover:rotate-0 hover:scale-105 transition duration-300 z-20 mx-auto w-full max-w-sm border border-gray-200 mt-0 md:mt-8">
+                    <div class="aspect-square bg-gray-100 flex flex-col items-center justify-center p-4 text-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                        <i class="fas fa-fire-alt text-4xl mb-3 text-gray-400 group-hover:text-yellow-500 transition"></i>
+                        <span class="text-sm font-bold text-gray-500 break-words w-full">
+                            
+                        </span>
+                    </div>
+                    <div class="pt-4 pb-2 text-center">
+                        <h3 class="font-black text-gray-800 text-lg mb-1">復興へのキャンドル</h3>
+                        <p class="text-xs text-gray-500 font-medium">Candle JUNE氏プロデュース。復興への想いを込めた灯りが会場を幻想的に彩りました。</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-16">
+                <p class="text-xl md:text-2xl font-bold text-suzu-orange bg-white inline-block px-8 py-4 rounded-full shadow-md border border-orange-100">
+                    「あの感動を、今年も。」<br class="md:hidden"> 2026年はさらに進化して開幕します！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2026年 見どころセクション -->
+    <section id="highlights" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-suzu-orange font-bold tracking-widest text-sm mb-2 block">HIGHLIGHTS 2026</span>
+                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6">今年のスズフェスは<br class="md:hidden">さらにパワーアップ！</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto font-medium">
+                    昨年の大成功をベースに、今年は4つのテーマで最高のエンターテイメント空間を創り出します。誰もが1日中楽しめるコンテンツが目白押し！
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- MUSIC -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col sm:flex-row items-start gap-6 group">
+                    <div class="w-20 h-20 bg-orange-100 text-suzu-orange rounded-full flex items-center justify-center text-3xl flex-shrink-0 group-hover:scale-110 group-hover:bg-suzu-orange group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-800 mb-3">MUSIC <span class="text-sm font-medium text-gray-500 ml-2">音楽ライブ</span></h3>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            昨年の一青窈さんらの熱狂を超える！今年も誰もが知る超豪華アーティストの出演が決定。飯田高校をはじめとする地元学生バンドも参戦し、ステージから珠洲へエールを送ります。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SPORTS -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col sm:flex-row items-start gap-6 group">
+                    <div class="w-20 h-20 bg-blue-100 text-suzu-blue rounded-full flex items-center justify-center text-3xl flex-shrink-0 group-hover:scale-110 group-hover:bg-suzu-blue group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-800 mb-3">SPORTS <span class="text-sm font-medium text-gray-500 ml-2">トップアスリートと交流</span></h3>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            HEROsプロジェクト協力のもと、各分野の元日本代表などトップアスリートが今年も珠洲に集結！年齢・性別問わず、子どもたちが憧れの選手と一緒に思いきり走り回れるプログラムをご用意。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FOOD -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col sm:flex-row items-start gap-6 group">
+                    <div class="w-20 h-20 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-3xl flex-shrink-0 group-hover:scale-110 group-hover:bg-red-500 group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-800 mb-3">FOOD & MORE <span class="text-sm font-medium text-gray-500 ml-2">絶品グルメと大抽選会</span></h3>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            YEGメンバーが全力で盛り上げる飲食ブースでは、珠洲の絶品グルメが大集合。さらに、昨年会場の熱気が最高潮に達した「大抽選会」も豪華景品を揃えてスケールアップして開催！
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FINALE -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col sm:flex-row items-start gap-6 group">
+                    <div class="w-20 h-20 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-3xl flex-shrink-0 group-hover:scale-110 group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-fire-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-800 mb-3">FINALE <span class="text-sm font-medium text-gray-500 ml-2">希望のキャンドルナイト</span></h3>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            フェスの締めくくりは、復興と未来への希望を込めたキャンドルナイト。珠洲の夜空の下、参加者全員の想いを一つにする幻想的で温かい時間をお届けします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-500 text-sm">※出演アーティストや出店情報は、公式SNSで随時発表いたします！</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ボランティア募集セクション -->
+    <section id="volunteer" class="py-20 bg-suzu-dark text-white relative">
+        <!-- 背景装飾 -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-10">
+            <svg class="absolute w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,100 C20,0 50,100 100,0 L100,100 Z" fill="#f97316"></path>
+            </svg>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i class="fas fa-hands-helping text-5xl text-suzu-orange mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-black mb-6">一緒にスズフェスを創りませんか？<br>ボランティアスタッフ大募集！</h2>
+            <p class="text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed text-lg">
+                「スズフェス2026」では、イベントを共に盛り上げてくれる仲間を募集しています。<br>
+                昨年の大成功も、多くのボランティアの皆様の力があってこそ実現しました。<br>
+                柳田植物公園での宿泊や、主要拠点からの送迎サポートもご用意しています。<br>
+                一緒に、珠洲に笑顔を届けるお手伝いをしませんか？
+            </p>
+            
+            <div class="bg-gray-800 rounded-xl p-6 md:p-8 mb-10 text-left max-w-2xl mx-auto border border-gray-700">
+                <h3 class="text-xl font-bold text-suzu-orange mb-4 border-b border-gray-700 pb-2">活動内容（予定）</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li><i class="fas fa-check-circle text-suzu-blue mr-2"></i> 前日・当日の会場設営、撤収サポート</li>
+                    <li><i class="fas fa-check-circle text-suzu-blue mr-2"></i> 会場周辺の駐車場案内・交通誘導</li>
+                    <li><i class="fas fa-check-circle text-suzu-blue mr-2"></i> エコステーション（ゴミ分別）の運営サポート</li>
+                    <li><i class="fas fa-check-circle text-suzu-blue mr-2"></i> 各種ブースの運営補助</li>
+                </ul>
+            </div>
+
+            <a href="#" class="inline-block bg-white text-suzu-dark hover:bg-gray-100 font-bold py-4 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-300 text-lg">
+                ボランティア詳細・お申し込みはこちら
+            </a>
+        </div>
+    </section>
+
+    <!-- アクセス・開催概要セクション -->
+    <section id="access" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6">開催概要・アクセス</h2>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col lg:flex-row">
+                <!-- Map Area -->
+                <div class="w-full lg:w-1/2 h-64 lg:h-auto bg-gray-200">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.co.jp/maps?q=珠洲市営野球場&output=embed"
+                        class="min-h-[300px] lg:min-h-full"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <!-- Info Area -->
+                <div class="w-full lg:w-1/2 p-8 md:p-12">
+                    <h3 class="text-2xl font-black text-gray-800 mb-6 border-b-2 border-suzu-orange pb-3 inline-block">スズフェス 2026</h3>
+                    
+                    <dl class="space-y-6">
+                        <div>
+                            <dt class="text-sm font-bold text-gray-500 mb-1"><i class="far fa-calendar-alt w-5"></i> 開催日時</dt>
+                            <dd class="text-lg font-bold text-gray-800">2026年9月20日（日） 10:00 〜 18:00<br><span class="text-sm font-normal text-gray-500">※雨天の場合、プログラムが変更になる場合がございます</span></dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-bold text-gray-500 mb-1"><i class="fas fa-map-marker-alt w-5"></i> 会場</dt>
+                            <dd class="text-lg font-bold text-gray-800">珠洲市営野球場<br><span class="text-base font-normal text-gray-600">〒927-1204 石川県珠洲市蛸島町1-4</span></dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-bold text-gray-500 mb-1"><i class="fas fa-ticket-alt w-5"></i> 入場料</dt>
+                            <dd class="text-lg font-bold text-suzu-red">無料</dd>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg border border-orange-100 mt-6">
+                            <dt class="text-sm font-bold text-suzu-orange mb-2"><i class="fas fa-bus"></i> 無料送迎バスのご案内</dt>
+                            <dd class="text-sm text-gray-700 leading-relaxed">
+                                昨年大好評だった、珠洲市内にお住まいの方を対象とした無料送迎バス（事前予約制）を今年も運行予定です。<br>
+                                予約方法や時刻表などの詳細は9月上旬に公式サイトにてご案内いたします。
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-suzu-dark text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+                
+                <div class="text-center md:text-left">
+                    <a href="#" class="text-2xl font-black text-white tracking-tighter mb-4 block">
+                        SUZU<span class="text-suzu-blue">FES</span> 2026
+                    </a>
+                    <p class="text-sm text-gray-400 mb-4">あそぼう。わらおう。みんなで、いっしょに。</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-suzu-orange hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition">
+                            <i class="fab fa-x-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-right text-sm space-y-2">
+                    <p><span class="text-gray-500 font-bold">主催:</span> 珠洲商工会議所青年部</p>
+                    <p><span class="text-gray-500 font-bold">共催:</span> 石川県商工会議所青年部連合会、一般社団法人珠洲青年会議所</p>
+                    <p><span class="text-gray-500 font-bold">お問い合わせ先:</span> suzu.cci.yeg@gmail.com</p>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+                &copy; 2026 SUZUFES Executive Committee. All rights reserved.<br>
+                ※当サイトはサンプルとして作成されたランディングページです。
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript 制御 -->
+    <script>
+        // モバイルメニューのトグル
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // モバイルメニューのリンクをクリックしたらメニューを閉じる
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
